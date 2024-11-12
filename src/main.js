@@ -1,14 +1,25 @@
-import './assets/main.css'
+import { createApp } from 'vue';
+import App from './App.vue';
 
-import { createApp } from 'vue'
-import { createPinia } from 'pinia'
+// Import Bootstrap and BootstrapVue 3
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap-vue-3/dist/bootstrap-vue-3.css';
 
-import App from './App.vue'
-import router from './router'
+import BootstrapVue3 from 'bootstrap-vue-3';
 
-const app = createApp(App)
+// Import components
+import ButtonComponent from './components/ButtonComponent.vue';
+import CategoryComponent from './components/CategoryComponent.vue';
+import PromotionComponent from './components/PromotionComponent.vue';
 
-app.use(createPinia())
-app.use(router)
+const app = createApp(App);
 
-app.mount('#app')
+// Use BootstrapVue3
+app.use(BootstrapVue3);
+
+// Register components
+app.component('ButtonComponent', ButtonComponent);
+app.component('CategoryComponent', CategoryComponent);
+app.component('PromotionComponent', PromotionComponent);
+// Mount the app
+app.mount('#app');
