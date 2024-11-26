@@ -1,3 +1,4 @@
+
 <template>
   <div>
   <b-button :style="{ backgroundColor: buttonColor }">Shop Now</b-button>
@@ -16,11 +17,7 @@ export default {
       promotion: 'buy2get1free',
     }
   },
-  methods:{
-    shopNow(promotion){
-      alert("let's buy anything you want ")
-    }
-  }
+ 
 }
 </script>
 <style scoped>

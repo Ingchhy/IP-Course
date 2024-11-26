@@ -31,12 +31,12 @@ export default {
   },
   data() {
     return {
-      promotion: {promotion: 'buy2get1free',}
+      promotion: {promotion: 'buy4 free 1',}
     };
   },
   methods: {
     shopNow(Promotion) {
-      alert("Let's shop: "+Promotion.names);
+      alert("Bought: "+Promotion.names);
     }
   }
 };
