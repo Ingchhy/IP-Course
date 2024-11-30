@@ -12,7 +12,7 @@ export const useProductStore = defineStore('product', {
     async fetchCategories() {
       try {
         const response = await axios.get('http://localhost:3000/api/categories');
-        this.categories = response.data; // Store the data in the store
+        this.categories = response.data; 
       } catch (error) {
         console.error("Error fetching categories:", error);
       }

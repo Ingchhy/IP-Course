@@ -6,9 +6,9 @@
   </div>
 </template>
 <script>
-import ButtonComponent from './components/ButtonComponent.vue';
-import PromotionComponent from './components/PromotionComponent.vue';
-import CategoryComponent from './components/CategoryComponent.vue';
+import ButtonComponent from '../components/ButtonComponent.vue';
+import PromotionComponent from '../components/PromotionComponent.vue';
+import CategoryComponent from '../components/CategoryComponent.vue';
 import srewberry from '@/assets/srewberry.jpg';
 import avacado from '@/assets/avocado.png';
 import vegetables from '@/assets/vegetables.png';

@@ -1,4 +1,3 @@
-
 <template>
   <div>
   <b-button :style="{ backgroundColor: buttonColor }">Shop Now</b-button>
@@ -14,10 +13,14 @@ export default {
   },
   data(){
     return {
-      promotion: 'buy2get1free',
+      promotion: 'buy4 free1',
     }
   },
- 
+  methods:{
+    shopNow(promotion){
+      alert("let's buy anything you want ")
+    }
+  }
 }
 </script>
 <style scoped>
